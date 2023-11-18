@@ -1,41 +1,43 @@
 body {
+  all: unset;
   padding: 0;
   margin: 0;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  position: relative;
-  max-width: 1800px;
-  padding: 0;
-  margin: 0px auto;
-}
-
 header {
-  margin: 0 auto;
   background-image: url("img/gora.jpg");
-  height: 700px;
-  padding: 0px 300px;
+  background-size: cover;
   color: #ffffff;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header p {
+  color: #ffffff;
 }
 
 section {
-  position: absolute;
-  max-width: 1170px;
-  margin: 40px auto;
-  padding: 0px 300px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
   max-width: 1170px;
-  margin: 40px auto;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  justify-content: space-between;
+  margin: 0 auto 0px auto;
+}
+
+.nav-bar img {
+  margin-top: 10px;
 }
 
 h1 {
@@ -45,38 +47,46 @@ h1 {
   margin: 0;
 }
 h2 {
-  font-size: 45px;
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
+  all: unset;
 }
-h3 {
-  font-size: 35px;
-  font-weight: 500;
-  color: #8b8b8b;
+
+h5 {
+  all: unset;
+}
+
+hr {
+  background-color: #02c6d8;
+  width: 55px;
+  height: 4px;
   text-align: center;
+  border: none;
+  margin: 15px 0px;
 }
-h4 {
+
+.section-header {
+  display: block;
   font-size: 20px;
   font-weight: 500;
-  color: #8b8b8b;
-  text-align: justify;
-  text-align-last: center;
+  text-align: center;
 }
-h5 {
+
+.section-description {
+  text-align: justify;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.section-padding {
+  padding: 40px 0;
+}
+
+p {
+  display: block;
   font-size: 15px;
   font-weight: 500;
-  color: #8b8b8b;
 }
 
-.banner {
-  display: flex;
-  align-items: flex-end;
-}
-
-.logo {
-  margin-top: 10px;
-}
 .main-nav ul {
   display: flex;
   list-style: none;
@@ -99,33 +109,41 @@ h5 {
 .hamburger-icon {
   margin-left: 10px;
 }
-.main-description {
-  max-width: 570px;
-  margin-bottom: 200px;
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-horizontal {
+  display: flex;
+  align-items: center;
+}
+.main-description span {
+  font-size: 45px;
+  display: block;
 }
 .main-photo {
   margin: 0;
-  padding: 30px;
-}
-.section-detail-description {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  padding: 20px 0;
-}
-.lady-photo {
-  position: relative;
-  box-shadow: 0 0 10px 5px #dadada;
+  padding: 0px;
 }
 
+.lady-photo {
+  box-shadow: 0 0 10px 5px #dadada;
+  z-index: 1;
+}
+
+.about-section {
+  color: #8b8b8b;
+}
 .detail {
   background-color: #f6f6f6;
-  margin: 50px 300px 50px 0px;
-  padding: 20px 0;
-}
-.detail h5 {
   padding: 10px 30px;
-  margin: 0;
+  min-height: 300px;
+}
+.read-our-story-button {
+  all: unset;
 }
 .read-our-story-button a {
   color: #e57754;
@@ -134,23 +152,162 @@ h5 {
 
 /*BUTTONS*/
 
-.button {
+button {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #ffffff;
   font-style: italic;
   text-wrap: nowrap;
-  font-size: 30px;
-  margin: 0;
+  font-size: 25px;
+  text-align: center;
+  border: none;
 }
 
-.button-view-portfolio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main-description button {
+  margin: 0;
+  display: block;
   width: 240px;
   height: 60px;
-  margin: 40px 0;
+  margin: 25px 0;
+  color: #ffffff;
   background-color: #9068be;
   box-shadow: 0 0 10px 5px #00b5c6;
+}
+
+/* Sub Bar*/
+.subscription-bar {
+  background-color: #9068be;
+}
+
+.subscription-bar .container {
+  display: grid;
+  grid-template-columns: minmax(auto, 470px) auto;
+  align-items: center;
+  padding: 45px 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+}
+
+.subscription-bar p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.subscription-form {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 10px;
+}
+
+.subscription-form input {
+  min-width: 230px;
+  min-height: 25px;
+  padding: 10px;
+}
+
+.subscription-form button {
+  color: #ffffff;
+  background-color: #e46e48;
+  padding: 0 15px;
+}
+
+/*offer*/
+
+.offer-section {
+  color: #8b8b8b;
+  background-color: #f6f6f6;
+}
+
+h4 {
+  all: unset;
+}
+
+.offer-section .container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  column-gap: 30px;
+  padding: 80px 0px;
+}
+
+.background-white {
+  background-color: #ffffff;
+}
+
+.offer-section .section-header {
+  grid-column: 1 / -1;
+}
+.offer-section hr {
+  grid-column: 1 / -1;
+}
+
+.offer-section .section-description {
+  grid-column: 1 / -1;
+}
+
+.offer-section .service-1-ikon {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  position: relative;
+  padding: 50px 0 30px 0;
+}
+
+.offer-section .service-1-title {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  justify-items: stretch;
+  color: #9068be;
+}
+
+.offer-section .service-1-desc {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+}
+
+.offer-section .service-1-button {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+  color: #ffffff;
+  background-color: #e46e48;
+  padding: 10px 35px;
+  margin-top: 15px;
+}
+
+.offer-section .service-2-ikon {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  padding: 50px 0 30px 0;
+}
+
+.offer-section .service-2-title {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  color: #02c6d8;
+}
+
+.offer-section .service-2-desc {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+}
+
+.offer-section .service-2-button {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+  color: #ffffff;
+  background-color: #326c73;
+  padding: 10px 35px;
+  margin-top: 15px;
+}
+
+.background-service-1 {
+  position: absolute;
+  height: 300px;
+  width: 570px;
+  background-color: #733240;
+  top: 30px;
+  left: 50px;
 }

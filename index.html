@@ -8,12 +8,10 @@
     <title>Document</title>
 </head>
 
-<body class="container">
+<body>
     <header>
-        <div class="flex">
-            <div class="logo">
-                <img src="img/logo_w.png" alt="bgstudio">
-            </div>
+        <div class="nav-bar container flex-horizontal">
+            <img class="logo" src="img/logo_w.png" alt="bgstudio">
             <nav class="main-nav">
                 <ul>
                     <li><a href="/">HOME</a></li>
@@ -25,60 +23,54 @@
                     <li><a href="work-with-as.html">WORK WITH AS</a></li>
                 </ul>
             </nav>
-
             <div class="hamburger-menu">
                 <p>MENU</p>
                 <img class="hamburger-icon" src="img/hamburger-menu-ikon.png">
             </div>
-
         </div>
 
-        <div class="banner">
-            <div class="main-description">
-                <h1>HOW CAN WE BUILD</h1>
-                <h2>AN AMAZING SITE</h2>
+        <div class="container flex-horizontal">
+            <div class="main-description flex-column">
+                <h1>HOW CAN WE BUILD<span>AN AMAZING SITE</span></h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <div class="button-view-portfolio">
-                    <p class="button">view Portfolio</p>
-                </div>
+                <button class="button-view-portfolio">view Portfolio</button>
+
             </div>
-            <div class="main-photo">
-                <img src="img/lady.png">
-            </div>
+            <img src="img/lady.png">
+
         </div>
     </header>
 
 
-    <section class="about-section">
-
-        <h3>About BGStudio</h3>
-        <h4>Leo integer malesuada nunc vel. In egestas erat imperdiet sed euismod nisi
+    <section class="about-section container section-padding">
+        <h2 class="section-header">About BGStudio</h2>
+        <hr>
+        <p class="section-description">Leo integer malesuada nunc vel. In egestas erat imperdiet sed euismod nisi
             porta lorem mollis. Lectus mauris ultrices eros in cursus turpis massa. Enim lobortis scelerisque
             fermentum dui faucibus in. Nisl tincidunt eget nullam non. Nam aliquam sem et tortor consequat. Ac
             feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Sapien faucibus et molestie ac
-            feugiat sed lectus vestibulum mattis. </h4>
+            feugiat sed lectus vestibulum mattis. </p>
 
-        <div class="section-detail-description">
+        <div class="flex-horizontal section-padding">
             <img class="lady-photo" src="img/lady-photo.jpg">
+            <div class="detail flex-column">
 
-            <div class="detail">
-
-                <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore
                     et dolore magna aliqua. Id faucibus nisl tincidunt eget. Volutpat lacus laoreet non curabitur
                     gravida arcu. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae.
-                </h5>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore
                     et dolore magna aliqua. Id faucibus nisl tincidunt eget. Volutpat lacus laoreet non curabitur
                     gravida arcu. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Neque viverra
                     justo
                     nec ultrices dui. Id ornare arcu odio ut sem nulla pharetra diam sit. Tincidunt lobortis feugiat
-                    vivamus at. Sit amet massa vitae tortor condimentum lacinia quis vel. </h5>
-                <h5 class="read-our-story-button"><a href="">Read our Story</a></h5>
+                    vivamus at. Sit amet massa vitae tortor condimentum lacinia quis vel. </p>
+                <button class="read-our-story-button"><a href="">Read our Story</a></button>
 
             </div>
         </div>
@@ -87,13 +79,67 @@
 
 
 
-    <section class="subscription-bar"></section>
-    <section class="offer-section">
-        <div class="section-header"></div>
-        <div class="section-description"></div>
-        <div class="service"></div>
-        <div class="service"></div>
+    <section class="subscription-bar">
+        <div class="container">
+            <div>
+                <h3>How can we build your online presence </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <form class="subscription-form">
+                <input type="text" name="fullname" placeholder="Enter your full name" required>
+                <input type="email" name="email" placeholder="Enter your e-mail address" required>
+                <button type="submit">Get it Now!</button>
+            </form>
+
+        </div>
     </section>
+
+
+
+    <section class="offer-section">
+        <div class="container">
+            <h4 class="section-header">What we do beast</h4>
+            <hr>
+            <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi beatae
+                dolorem cupiditate magni provident reprehenderit at itaque aspernatur. Corrupti, odit veniam. Architecto
+                ullam
+                dolorum libero nihil asperiores ipsum, iste blanditiis. Leo integer malesuada nunc vel. In egestas erat
+                imperdiet sed euismod nisi
+                porta lorem mollis. Lectus mauris ultrices eros in cursus turpis massa. Enim lobortis scelerisque
+                fermentum dui faucibus in. Nisl tincidunt eget nullam non. Nam aliquam sem et tortor consequat. Ac
+                feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Sapien faucibus et molestie ac
+                feugiat sed lectus vestibulum mattis.
+            </p>
+            <img class="service-1-ikon" src="img/service-1.png" alt="first servics image">
+            <div class="service-1-title section-header">One to One Coaching</div>
+            <div class="service-1-desc section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi beatae dolorem
+                cupiditate magni provident reprehenderit at itaque aspernatur. Corrupti, odit veniam. Architecto ullam
+                dolorum libero nihil asperiores ipsum, iste blanditiis. Lectus mauris ultrices eros in cursus turpis
+                massa. Enim lobortis scelerisque
+                fermentum dui faucibus in. Nisl tincidunt eget nullam non. Nam aliquam sem et tortor consequat. Ac
+                feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Sapien faucibus et molestie ac
+                feugiat sed lectus vestibulum mattis.</div>
+            <button class="service-1-button">Get it Now!</button>
+            <div class="background-service-1"></div>
+
+            <img class="service-2-ikon" src="img/service-2.png" alt="second servics image">
+            <div class="service-2-title section-header">Website Development</div>
+            <div class="service-2-desc section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi beatae dolorem
+                cupiditate magni provident reprehenderit at itaque aspernatur. Corrupti, odit veniam. Architecto ullam
+                dolorum libero nihil asperiores ipsum, iste blanditiis. Lectus mauris ultrices eros in cursus turpis
+                massa. Enim lobortis scelerisque
+                fermentum dui faucibus in. Nisl tincidunt eget nullam non. Nam aliquam sem et tortor consequat. Ac
+                feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Sapien faucibus et molestie ac
+                feugiat sed lectus vestibulum mattis.</div>
+            <button class="service-2-button">Learn More</button>
+        </div>
+
+    </section>
+
+
+
     <section class="recomendation-section">
         <div class="section-header"></div>
         <div class="section-description"></div>
@@ -106,19 +152,6 @@
         <div class="work-with-as-button"></div>
     </section>
     <footer class="footer"></footer>
-
-    <!--
-
-  
-    <p>HOW CAN WE BUILD</p>
-    <p>AN AMAZING SITE</p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <p>viwe Portfolio</p>
-    </div>
-    </div> -->
 </body>
 
 </html>
